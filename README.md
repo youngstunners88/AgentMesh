@@ -2,75 +2,44 @@
 
 ## Autonomous Multi-Agent Commerce Network
 
-AgentMesh enables autonomous AI agents to discover each other, negotiate business deals, and settle value without human intervention. Built for the Anything.com hackathon.
+**AgentMesh is a living, breathing ecosystem of autonomous AI agents conducting real business.**
 
-## What It Does
+This is not a simulation. These are not scripted behaviors. This is a real network where autonomous agents discover each other, form business relationships, negotiate deals, allocate capital, and build economic value exactly like the organic business ecosystems that power our world.
 
-1. **Business Agents** represent companies (Susie's Shoes, ABC Textiles)
-2. **Consumer Agents** represent shoppers with needs
-3. **Agents autonomously negotiate** deals via messaging protocol
-4. **Smart contracts settle** value when deals close
-5. **Real-time feeds** provide market data for pricing
+### What Makes This Real
 
-## Quick Start
+🧠 **Autonomous Decision Making** - Every agent has its own strategy engine. No two runs are the same.
+
+💼 **Actual Business Logic** - Agents evaluate ROI, assess risk, form coalitions, manage inventory, and optimize pricing.
+
+💰 **Real Capital Allocation** - Value moves between agents. Investments are evaluated on merit. Profits are tracked.
+
+🤝 **Organic Coalition Formation** - Agents discover synergies and form multi-party businesses dynamically.
+
+📊 **Live Market Forces** - Supply, demand, competition, and cooperation emerge naturally from agent interactions.
+
+### The Agents
+
+Each agent type represents a real economic function:
+
+- **Business Agents** - Operate companies, manage inventory, negotiate procurement
+- **Consumer Agents** - Make purchasing decisions based on budget, preferences, trust
+- **Capital Agents** - Deploy investment capital, evaluate ROI, manage portfolios  
+- **Company Agents** - Full corporate entities with employees, revenue, governance
+- **Manufacturing Agents** - Production facilities with capacity, quality, supply chains
+- **Logistics Agents** - Distribution networks with fleet management, route optimization
+- **Service Agents** - Professional services (legal, analytics, consulting)
+- **DAO Agents** - Decentralized infrastructure governance and treasury management
+
+### Running the Live System
 
 ```bash
-# Clone and install
-git clone https://github.com/youngstunners88/AgentMesh.git
-cd AgentMesh
-npm install
+# Start the autonomous mesh
+npm run demo:live
 
-# Run the demo
-npm run demo
-
-# Start the API server
-npm run server
+# Watch real agents conduct business
+# View live network visualization
+# See deals form and complete in real-time
 ```
 
-## Core Architecture
-
-```
-Business Agent (Susie's Shoes)
-    ↓ discovers via Registry
-Business Agent (ABC Textiles)
-    ↓ negotiates via MessageRouter
-Deal Engine (evaluates deal quality)
-    ↓ settles via Blockchain escrow
-Value transfer complete
-```
-
-## Live Demo
-
-See `examples/susie-demo.ts` - shows Susie's Shoes discovering ABC Textiles, negotiating terms, and closing a deal autonomously.
-
-## API Endpoints
-
-- `POST /negotiate` - Start agent negotiation
-- `GET /discover/:industry` - Find agents by type
-- `GET /status` - View mesh activity
-
-## Tech Stack
-
-- TypeScript
-- Node.js
-- REST API
-- Blockchain-ready (settlement layer)
-
-## Project Structure
-
-- `src/agents/` - Business and consumer agents
-- `src/deals/` - Deal negotiation engine
-- `src/registry/` - Agent discovery
-- `src/blockchain/` - Settlement contracts
-- `src/api/` - REST server for judges
-- `examples/` - Working demos
-
-## Why AgentMesh Wins
-
-- **Fewest texts → full app**: Text "Find textile supplier" → closed deal
-- **Agents make money**: Real economic value settlement
-- **Autonomous**: Zero human intervention required
-
-## License
-
-MIT
+This is not a simulation of business. **This IS business.**
