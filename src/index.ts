@@ -193,51 +193,84 @@ export const agentMesh = new AgentMesh();
 // Core Systems
 export { AgentMesh } from './core/AgentMesh';
 export { StateManager } from './core/StateManager';
-export { EventEmitter } from './utils/EventEmitter';
+export { Types } from './core/types';
 
 // Agents
-export { BusinessAgent, BusinessCapabilities } from './agents/BusinessAgent';
-export { ConsumerAgent } from './consumers/ConsumerAgent';
-export { CapitalAgent } from './capital/CapitalAgent';
+export { BusinessAgent, Capabilities } from './agents/BusinessAgent';
+export { ConsumerAgent } from './agents/ConsumerAgent';
+export { CapitalAgent } from './agents/CapitalAgent';
+export { DAOAgent, InfrastructureCapability } from './dao/DAOAgent';
+export { CompanyAgent, CompanyRole } from './companies/CompanyAgent';
 
-// Protocol & Deals
+// Deal System
+export { DealEngine, Deal } from './deals/DealEngine';
+export { ValueSettlement, EscrowRecord } from './deals/ValueSettlement';
+
+// Protocol & Infrastructure
+export { ProtocolAbstraction } from './protocol/ProtocolAbstraction';
 export { MessageRouter } from './router/MessageRouter';
-export { ProtocolAdapter } from './protocol/ProtocolAdapter';
-export { DealEngine, Deal, DealStatus } from './deals/DealEngine';
 
-// Registry
-export { Registry, AgentRegistryEntry } from './registry/Registry';
+// Registry & Discovery
+export { AgentRegistry } from './registry/AgentRegistry';
+export { CompanyRegistry } from './registry/CompanyRegistry';
 
-// Strategy & Coalitions
-export { StrategicEngine } from './strategy/StrategicEngine';
-export { CoalitionManager, Coalition } from './strategy/CoalitionManager';
+// Economic Systems
+export { MarketSimulator, MarketSnapshot } from './market/MarketSimulator';
+export { FinancialEngine, BalanceSheet, PnL, CashFlow, FinancialHealth } from './accounting/FinancialEngine';
+export { PredictiveAnalytics, PredictionResult, MarketTrend, DealFeatures } from './analytics/PredictiveAnalytics';
 
-// Manufacturing & Distribution
-export { ProductionEngine } from './manufacturing/ProductionEngine';
-export { LogisticsNetwork } from './distribution/LogisticsNetwork';
+// Visualization
+export { MeshVisualizer, VisualizerConfig, SceneSnapshot } from './visualization/MeshVisualizer';
 
-// Auth & Settlement
+// Real Data & APIs
+export { RealAPIConnectors, StockData, CommodityData, MarketContext } from './integrations/RealAPIConnectors';
+
+// Production & Distribution
+export { ProductionEngine, ProductionLine } from './manufacturing/ProductionEngine';
+export { LogisticsNetwork, SupplyChain, DistributionRoute } from './distribution/LogisticsNetwork';
+
+// Strategy & Governance
+export { StrategicEngine, Strategy } from './strategy/StrategicEngine';
+export { CoalitionFormation, Coalition } from './strategy/CoalitionFormation';
+export { GovernanceModule, Proposal, Vote } from './governance/GovernanceModule';
+export { Voting } from './governance/Voting';
+
+// Treasury & Security
+export { Treasury } from './dao/Treasury';
+export { SecurityLayer, FraudDetection } from './security/SecurityLayer';
 export { AuthManager } from './auth/AuthManager';
-export { SettlementEngine } from './settlement/SettlementEngine';
 
-// Persistence & Security
-export { PersistenceLayer } from './persistence/PersistenceLayer';
-export { SecurityLayer } from './security/SecurityLayer';
+// Monitoring & Analytics
+export { MonitoringDashboard, SystemMetrics } from './monitoring/Dashboard';
+export { EconomicAnalytics, TradeMetrics } from './analytics/EconomicAnalytics';
 
-// Blockchain
-export { SmartContractEscrow } from './blockchain/SmartContractEscrow';
+// Utilities
+export { EventEmitter } from './utils/EventEmitter';
+export { ErrorHandler } from './utils/ErrorHandler';
+export { RateLimiter } from './utils/RateLimiter';
+export { Logger } from './utils/Logger';
 
-// AI
-export { LLMStrategyAgent } from './ai/LLMStrategyAgent';
+// Persistence
+export { PersistenceLayer, DatabaseAdapter } from './persistence/PersistenceLayer';
 
-// Data Feeds
-export { DataFeedEngine } from './feeds/DataFeedEngine';
-
-// Communication (AgentMail Bridge)
+// Communication
 export { AgentMailBridge } from './communication/AgentMailBridge';
 export { HumanInboxManager } from './communication/HumanInboxManager';
 export { ApprovalWorkflow } from './communication/ApprovalWorkflow';
 export { DigestGenerator } from './communication/DigestGenerator';
 
-// Types
-export * from './core/types';
+// Economic Zones
+export { EconomicZone, ZoneRules } from './economy/EconomicZones';
+
+// Inspector & Demo
+export { MeshInspector } from './inspector/MeshInspector';
+
+// API Server
+export { createAPIServer } from './api/server';
+
+// Demo
+export { runSusieDemo } from './examples/susie-demo';
+
+// Version
+export const VERSION = '1.0.0';
+export const BUILD_DATE = new Date().toISOString();
