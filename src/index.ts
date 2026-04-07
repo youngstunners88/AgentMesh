@@ -189,3 +189,55 @@ export class AgentMesh {
 
 // Singleton instance
 export const agentMesh = new AgentMesh();
+
+// Core Systems
+export { AgentMesh } from './core/AgentMesh';
+export { StateManager } from './core/StateManager';
+export { EventEmitter } from './utils/EventEmitter';
+
+// Agents
+export { BusinessAgent, BusinessCapabilities } from './agents/BusinessAgent';
+export { ConsumerAgent } from './consumers/ConsumerAgent';
+export { CapitalAgent } from './capital/CapitalAgent';
+
+// Protocol & Deals
+export { MessageRouter } from './router/MessageRouter';
+export { ProtocolAdapter } from './protocol/ProtocolAdapter';
+export { DealEngine, Deal, DealStatus } from './deals/DealEngine';
+
+// Registry
+export { Registry, AgentRegistryEntry } from './registry/Registry';
+
+// Strategy & Coalitions
+export { StrategicEngine } from './strategy/StrategicEngine';
+export { CoalitionManager, Coalition } from './strategy/CoalitionManager';
+
+// Manufacturing & Distribution
+export { ProductionEngine } from './manufacturing/ProductionEngine';
+export { LogisticsNetwork } from './distribution/LogisticsNetwork';
+
+// Auth & Settlement
+export { AuthManager } from './auth/AuthManager';
+export { SettlementEngine } from './settlement/SettlementEngine';
+
+// Persistence & Security
+export { PersistenceLayer } from './persistence/PersistenceLayer';
+export { SecurityLayer } from './security/SecurityLayer';
+
+// Blockchain
+export { SmartContractEscrow } from './blockchain/SmartContractEscrow';
+
+// AI
+export { LLMStrategyAgent } from './ai/LLMStrategyAgent';
+
+// Data Feeds
+export { DataFeedEngine } from './feeds/DataFeedEngine';
+
+// Communication (AgentMail Bridge)
+export { AgentMailBridge } from './communication/AgentMailBridge';
+export { HumanInboxManager } from './communication/HumanInboxManager';
+export { ApprovalWorkflow } from './communication/ApprovalWorkflow';
+export { DigestGenerator } from './communication/DigestGenerator';
+
+// Types
+export * from './core/types';
